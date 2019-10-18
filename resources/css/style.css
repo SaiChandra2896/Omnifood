@@ -202,14 +202,19 @@ header {
   width: 100%;
   margin: 0;
   overflow: hidden;
+  /*add background color to make the it look darker when we add opacity*/
+  background-color: #000;
 }
 .meal-photo img {
+  opacity: 0.7;
   width: 100%;
   height: auto;
   /*add transform scale to increase the size and decrease the size upon hover*/
   transform: scale(1.15);
+  transition: transform 0.5s;
 }
 
 .meal-photo img:hover {
-  transform: scale(1);
+  opacity: 1;
+  transform: scale(1.03);
 }
