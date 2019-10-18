@@ -19,10 +19,21 @@ html {
 
 header {
   /* to add background image and to style it */
-  background-image: url(img/hero.jpg);
+  /* linear gradient add dark overlay to the image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  /* translate element half of its length and width */
+  transform: translate(-50%, -50%);
 }
 
 h1 {
