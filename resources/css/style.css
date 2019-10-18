@@ -22,12 +22,16 @@ section {
   padding: 80px 0;
 }
 
+.box {
+  padding: 1%;
+}
+
 /* header formatting and reusable components */
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 h1 {
@@ -36,6 +40,7 @@ h1 {
   color: #fff;
   font-size: 240%;
   word-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -43,7 +48,14 @@ h2 {
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
 /*To get a line after h2 header*/
 h2::after {
   display: block;
@@ -53,6 +65,25 @@ h2::after {
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+/* paragraphstyles common */
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
 }
 
 /* button styling with btn class names .btn for common styles for all buttons */
